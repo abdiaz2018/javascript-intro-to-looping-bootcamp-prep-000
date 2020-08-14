@@ -8,11 +8,12 @@ function forLoop(array) {
   }
   return array;
 }
-function whileLoop(n) {
+
+unction whileLoop(n) {
   let countdown = n;
 
-  while(countdown > 0) {
-    consoe.log(--countdown)
+    while (countdown > 0) {
+      console.log(--countdown)
+    }
+    return "done";
   }
-  return "done";
-}
