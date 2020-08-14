@@ -19,13 +19,15 @@ function whileLoop(n) {
   }
 
 
-  function doWhileLoop(array) {
-    function maybeTrue() {
-      return Math.random() >= 0.5
-    }
 
-    do {
-      array.pop();
-    } while (array.length > -1 && maybeTrue());
-      return array;
+  var i = 0
+  function incrementVariable() {
+    i = i + 1;
+    return i;
   }
+
+  function doWhileLoop(integer){
+    do{
+      console.log("I run once regardless.")
+    } while (incrementVariable() <= integer)
+  } 
